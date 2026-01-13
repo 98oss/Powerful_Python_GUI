@@ -298,36 +298,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 
-
-############################OLD CODE KEEPING FOR REFERENCE##########################
-    # def on_button_click(self):
-
-    #     #Create and start the speed test thread
-    #     self.button.setEnabled(False)
-    #     self.button.setText("Running...")
-    #     self.console.append("Starting speed tests...")
-
-
-        # #Start thread
-        # self.thread = SpeedTestThread()
-        # self.thread.speedTestCompleted.connect(self.show_results)
-        # self.thread.start()
-        # self.thread.finished.connect(self.on_test_finished)
-
-    # def show_results(self, download_result, upload_result):
-    #     #This method will be called when the speed test is completed
-    #     self.console.append(f"{download_result}\n")
-    #     self.console.append(f"{upload_result}\n")
-    #     self.console.append("Speed tests completed.\n")
-
-    # def on_test_finished(self):
-    #     self.button.setEnabled(True)
-    #     self.button.setText("Run Speed Test")
-
-
-
-
-
 #####################WEATHER THREAD#####################
 
 
@@ -397,40 +367,6 @@ class MainWindow(QtWidgets.QMainWindow):
             self.setStyleSheet(self.dark_theme)
         else:
             self.setStyleSheet(self.light_theme)
-
-
-##########WEATHER THREAD OLD CODE KEEPING FOR REFERENCE############
-    # def on_weather_click(self):
-    #     location = self.location_input.text().strip()
-    #     if not location:
-    #         self.console.append(f"Please enter a city name.\n")
-    #         return
-        
-        # self.weather_button.setEnabled(False)
-        # self.weather_button.setText("Fetching...")
-        # self.console.append(f"Fetching weather for {location}...\n")
-
-        #Create and start the weather thread
-
-        # self.weather_thread = WeatherThread(location)
-        # self.weather_thread.weathercompleted.connect(self.show_weather)
-        # self.weather_thread.start()
-        # self.weather_thread.finished.connect(self.on_weather_finished)
-
-    # def show_weather(self, weather_data):
-    #     if "error" in weather_data:
-    #         self.console.append(f"Error: {weather_data['error']}\n")
-    #     else:
-    #         self.console.append(f"Weather in {weather_data['location']}:\n")
-    #         self.console.append(f"Temperature: {weather_data['temperature']} °C\n")
-    #         self.console.append(f"Description: {weather_data['description']}\n")
-    #         self.console.append(f"Humidity: {weather_data['humidity']}%\n")
-    #         self.console.append(f"Wind Speed: {weather_data['wind_speed']} m/s\n")
-        
-    # def on_weather_finished(self):
-    #     self.weather_button.setEnabled(True)
-    #     self.weather_button.setText("Get Weather")
-
 
 
 ################SETTINGS PAGE##############
