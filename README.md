@@ -2,10 +2,10 @@ WELCOME TO A BRAND NEW PYTHON PROJECT I HAVE DECIDED TO START ON MY OWN AS A FUN
 THIS PROJECT WILL TEST MY ABILITY AS WELL AS PYTHONS (HOPEFULLY) IN HOW MUCH I CAN CRAME INTO 1 TINY PROGRAM!
 
 
-##################FIRST PUBLIC REPO##################
+-------------FIRST PUBLIC REPO-------------
 
 
-##################WEATHER APP##################
+WEATHER APP
 
 You just enter a city i need to implement a way that the program can determine which true city you are attempting to get so it doesn't request the wrong information from the API
 
