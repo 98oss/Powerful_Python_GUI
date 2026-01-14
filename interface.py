@@ -174,7 +174,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 
-            #sidebar widgeta and input
+            #sidebar widgets and input
         sidebar = QtWidgets.QDockWidget("Menu", self)
         sidebar_content = QtWidgets.QWidget()
         sidebar_layout = QtWidgets.QVBoxLayout()
@@ -281,14 +281,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def on_test_finished(self):
         self.speedtest_button.setEnabled(True)
-        self.speedtest_button.setText("Run Speed Test")  
-
-
-        #Start thread
-        self.thread = SpeedTestThread()
-        self.thread.speedTestCompleted.connect(self.show_results)
-        self.thread.start()
-        self.thread.finished.connect(self.on_test_finished)
+        self.speedtest_button.setText("Run Speed Test")
 
 
 
